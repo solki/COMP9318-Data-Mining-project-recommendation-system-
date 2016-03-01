@@ -1,0 +1,67 @@
+README
+======
+
+Firstly, copy all the `*.txt` files and your code (i.e. `*.java` files) to the
+same folder. You can then test your code like below:
+
+== Compile
+
+
+.Compile command
+----
+% javac *.java
+----
+
+== Task I
+
+For Task I, your program should receive the following command line arguments:
+`<n> <m> <f> <r> <mu> <lamdba> <RatingFile> <IterFile> <RandomFile>`.
+
+To use the test files, you should type the following command:
+
+.Task I execution command and output
+----
+% java SGD 10 20 3 13 0.001 0.01 rating.txt iter.txt uniform_rand.txt
+1.246671 0.909328 1.455184 1.202442 1.149469 1.132513 1.457804 0.833511 1.473223 1.305677 1.267454 1.225443 1.249330 0.658766 1.212427 0.827156 0.685718 1.446397 1.338323 0.670010
+1.293653 1.222965 1.518319 1.193881 0.774366 1.614944 0.733742 1.560963 1.140616 1.264310 0.854083 1.492324 1.569935 0.742232 0.821431 1.109717 1.476482 1.093530 1.451306 1.438710
+1.039109 1.622223 1.032519 1.626749 1.052254 1.554424 0.823914 1.126944 1.600997 1.235230 0.763604 0.908238 0.820585 0.766863 1.513842 1.578119 1.516844 1.042997 1.065769 0.770615
+----
+
+*Note*: The above matrix is 3 x 20. Due to the auto-wrapping of the html page, the above output could look
+different depending on how wide the browser window is (e.g., like a matrix of 12
+x 5 or 15 x 4). You could look at the README.adoc file (Lines 25 -- 27). 
+
+== Task II
+
+For Task II, your program should receive the following command line arguments: 
+`<n> <d> <NumOfTrees> <MaxSizeOfLeaf> <DataFile> <RandomGuassianFile> <QueryFile>`.
+
+To use the test files, you should type the following command:
+
+.Task II execution command and output
+----
+% java RPTrees 20 3 3 3 item_matrix.txt guassian_rand.txt query.txt
+1 10 18
+2 17 16
+4 15 3
+----
+
+
+== Note
+
+. Please make sure you compiled and tested your program on any of the CSE Linux
+machines. Things could be different include (but not limited to): separator of
+path and file names, file format, and `Java` version. 
+
+. Please don't assume that we will always given relative paths of the files as
+the command line arguments when marking your project. Your program should be
+handle both case (i.e., relative and absolute paths).
+
+. Please don't assume that we will always use the same filenames as in the
+sample test case when marking your project.
+
+. We do tolerate slight difference in the output for the floating numbers (in
+Task I). We will accept errors less than `0.00001` when marking your project. We
+also strongly recommend you to use the `double` data type in your code. 
+
+
